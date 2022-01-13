@@ -1,5 +1,16 @@
 {
   "dependencies": {
     "@terra-money/terra.js": "^3.0.4"
-  }
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "ts-node-dev": "^1.1.8"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node build/index.js",
+    "watch": "tsc -w -p ./src"
+  },
+  "author": "",
+  "license": "ISC"
 }
